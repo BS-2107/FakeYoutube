@@ -36,14 +36,13 @@
                 vertical-align:top;
                 margin-right:15px;
             }
-            .channelpic{
-                display:inline-block;
-                width:50px;
-                vertical-align:top;
+            .video-info-grid{
+                display:grid;
+                grid-template-columns:50px 1fr;
+            }
+            .channel-pic{
             }
             .video-info{
-                display:inline-block;
-                width:200px;
             }
             .profile{
                 border-radius:25px;
@@ -70,8 +69,9 @@
             <div class="thumbnail-row">
             <img class="thumbnail" src="thumbnail/thumbnail-1.webp">
             </div>
-            <div>
-                <div class="channelpic">
+            <div class="video-info-grid">
+
+                <div class="channel-pic">
                     <img class="profile" src="channel/channel-1.jpeg">
                 </div>
                 <div class="video-info">
@@ -94,9 +94,11 @@
             <div class="thumbnail-row">
                 <img class="thumbnail" src="thumbnail/thumbnail-2.webp">
             </div>
-            <div>
-                <div class="channelpic" > 
-                    <img  class="profile" src="channel/channel-2.jpeg"></div>
+            <div class="video-info-grid">
+
+                <div class="channel-pic" > 
+                    <img  class="profile" src="channel/channel-2.jpeg">
+                </div>
                 <div class="video-info">
                     <p class="video-title">
                     Try Not to Laugh Challenge#9
