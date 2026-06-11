@@ -2,30 +2,82 @@
 <html>
     <head>
         <style>
-            .p1{
-                font-size:25px;
-                color: white;
+            .frpfpview{
+                display:inline-block;
             }
-            .p2{
-                color:grey;
-
+            .friendsview{
+                display:inline-block;
             }
-            .div{
-                padding-left:10px;
-                width:325px;
-                background-color:rgb(33,33,33);
-                border:1px solid black;
-                height:100px;
-                display: inline-block;
+            .view{
+                width:250px;    
+                display:inline-block;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            }
+            .p{
+                font-family:Arial;
+            }
+            .profile{
+                width:250px;
+                height:250px;
+                object-fit:cover;
+                object-position:center;
+            }
+            .add{
+                padding-left:20px;
+                padding-right:20px;
+                padding-top:10px;
+                padding-bottom:10px;    
+                background-color: rgb(29, 123, 255);
+                color:white;
+                border:none;
+                border-radius:3px;
+            }
+            .name{
+                margin-top:0;
+                margin-bottom:0;
+            
+                font-weight:bold;
+            }
+            .friends{
+                color:rgb(81, 81, 81);
+                vertical-align:middle;
+            }
+            .frpfp{
+                width:40px;
+                height:40px;
+                border-radius:20px;
+                object-fit:cover;
+                object-position:center;   
+                vertical-align:middle;      
             }
         </style>
 
     </head>
     <body>
-        <div class="div">
-            <p class="p1"> Install YouTube Music</p>
-            <p class="p2">Add YouTube Music to your desktop for quick and early access</p>
+        <div class="view">
+            <div>
+                <img class="profile" src="ex1.jpg">
+            </div>
+            <div class="info">
+                <div>
+                    <p class="name">Oliver</p>
+                </div>
+                <div>
+                    <div class="frpfpview">
+                        <img class="frpfp" src="friend.jpg">
+                    </div>
+                    <div class="friendsview" >
+                        <p class="friends">2 mutual friends</p>
+                    </div>
+                    
+                    
+                </div>
+                <div>
+                    <button class="add">Add Friend</button>
+                </div>
+            </div>
         </div>
+       
     </body>
 
 </html>
