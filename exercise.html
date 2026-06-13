@@ -1,83 +1,64 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>
+            Exercise
+        </title>
         <style>
-            .frpfpview{
-                display:inline-block;
+            .top{
+                display:flex;
+                flex-direction: row;
+                background-color:rgb(142, 42, 142);
+                justify-content:space-between;
+                height:50px;
+                align-items:center;
+
             }
-            .friendsview{
-                display:inline-block;
-            }
-            .view{
-                width:250px;    
-                display:inline-block;
-                box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-            }
-            .p{
-                font-family:Arial;
-            }
-            .profile{
-                width:250px;
-                height:250px;
-                object-fit:cover;
-                object-position:center;
-            }
-            .add{
-                padding-left:20px;
-                padding-right:20px;
-                padding-top:10px;
-                padding-bottom:10px;    
-                background-color: rgb(29, 123, 255);
-                color:white;
-                border:none;
-                border-radius:3px;
-            }
-            .name{
-                margin-top:0;
-                margin-bottom:0;
-            
-                font-weight:bold;
-            }
-            .friends{
-                color:rgb(81, 81, 81);
-                vertical-align:middle;
-            }
-            .frpfp{
-                width:40px;
-                height:40px;
+            .search{
+                width:100%;
+                height:25px;
                 border-radius:20px;
-                object-fit:cover;
-                object-position:center;   
-                vertical-align:middle;      
+                border:none;
+                padding-left:20px;
+                flex:1fr;
+                margin-left:50px;
+                margin-right:60px;
+                max-width:400px;
+            }
+            .text{
+                margin-left:15px;   
+                color:white;
+                font-weight:bold;
+
+            }
+            .button{
+                padding-left:10px;
+                padding-right:10px;
+                margin-right:15px;
+                border-width:1.5px;
+                border-color:white;
+                border-style:solid;
+                border-radius:2px;
+                height:30px;
+                background-color:purple;
+                color:white;
             }
         </style>
-
     </head>
+
     <body>
-        <div class="view">
+        <div class="top">
             <div>
-                <img class="profile" src="ex1.jpg">
+                <p class="text">Home</p>
             </div>
-            <div class="info">
-                <div>
-                    <p class="name">Oliver</p>
-                </div>
-                <div>
-                    <div class="frpfpview">
-                        <img class="frpfp" src="friend.jpg">
-                    </div>
-                    <div class="friendsview" >
-                        <p class="friends">2 mutual friends</p>
-                    </div>
-                    
-                    
-                </div>
-                <div>
-                    <button class="add">Add Friend</button>
-                </div>
+            <div class>
+                <input class="search" type="text" placeholder="Search"> 
+            </div>
+            <div>
+                <button class="button">
+                    Download
+                </button>
             </div>
         </div>
-       
     </body>
-
 </html>
